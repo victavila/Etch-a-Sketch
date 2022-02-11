@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background-color: rgb(191, 255, 250);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: royalblue;
+  font-size: 40px;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  margin: auto;
+  border: solid black 4px;
+  border-radius: 5px;
+}
+
+.box {
+  background: white;
+  height: 0;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.btn {
+  font-size: 18px;
+  color: white;
+  background-color: royalblue;
+  border: white solid 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30%;
+  height: 7px;
+  border-radius: 5px;
+  background: white;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: royalblue;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: royalblue;
+  cursor: pointer;
+}
+
+#rangevalue {
+  border: solid royalblue 2px;
+  color: royalblue;
+  padding: 2px;
+  font-weight: bold;
+}
